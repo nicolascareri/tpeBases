@@ -18,7 +18,7 @@
                 </div>
                 <label>Puntaje</label>
                 <br></br>
-                <fieldset class="puntaje">
+                <fieldset >
                     <input type="radio" id="star5" name="puntaje" value="5" required/><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                     <input type="radio" id="star4" name="puntaje" value="4" required/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
                     <input type="radio" id="star3" name="puntaje" value="3" required/><label class = "full" for="star3" title="Meh - 3 stars"></label>
