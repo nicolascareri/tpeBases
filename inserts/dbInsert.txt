@@ -1,0 +1,107 @@
+INSERT INTO unc_249193.gr04_cliente VALUES (1, 'Liggerini', 'Leandro', '2019-06-01');
+INSERT INTO unc_249193.gr04_cliente VALUES (2, 'Carpinetti', 'Heroel', '2019-06-01');
+
+
+--
+-- Data for Name: gr04_alquiler; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_alquiler VALUES (3, 1, '2019-06-15', '2019-07-02', 230.00);
+INSERT INTO unc_249193.gr04_alquiler VALUES (4, 1, '2019-06-03', '2019-08-20', 175.00);
+INSERT INTO unc_249193.gr04_alquiler VALUES (1, 1, '2019-06-01', '2019-06-08', 400.00);
+INSERT INTO unc_249193.gr04_alquiler VALUES (5, 2, '2019-05-25', '2019-07-09', 500.00);
+INSERT INTO unc_249193.gr04_alquiler VALUES (2, 2, '2019-05-15', '2019-08-20', 300.00);
+
+
+--
+-- Data for Name: gr04_estanteria; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_estanteria VALUES (1, 'Estanteria 1');
+INSERT INTO unc_249193.gr04_estanteria VALUES (2, 'Estanteria 2');
+INSERT INTO unc_249193.gr04_estanteria VALUES (3, 'Estanteria 3');
+
+
+--
+-- Data for Name: gr04_fila; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_fila VALUES (1, 1, 'Fila 1', 300.00);
+INSERT INTO unc_249193.gr04_fila VALUES (1, 2, 'Fila 2', 500.00);
+INSERT INTO unc_249193.gr04_fila VALUES (1, 3, 'Fila 3', 700.00);
+INSERT INTO unc_249193.gr04_fila VALUES (2, 1, 'Fila 1', 400.00);
+INSERT INTO unc_249193.gr04_fila VALUES (2, 2, 'Fila 2', 600.00);
+INSERT INTO unc_249193.gr04_fila VALUES (2, 3, 'Fila 3', 800.00);
+INSERT INTO unc_249193.gr04_fila VALUES (3, 1, 'Fila 1', 800.00);
+INSERT INTO unc_249193.gr04_fila VALUES (3, 2, 'Fila 2', 1000.00);
+INSERT INTO unc_249193.gr04_fila VALUES (3, 3, 'Fila 3', 1200.00);
+
+
+--
+-- Data for Name: gr04_posicion; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_posicion VALUES (1, 1, 1, 'general', 1);
+INSERT INTO unc_249193.gr04_posicion VALUES (2, 1, 1, 'general', 2);
+INSERT INTO unc_249193.gr04_posicion VALUES (1, 1, 2, 'general', 3);
+INSERT INTO unc_249193.gr04_posicion VALUES (2, 1, 2, 'general', 4);
+INSERT INTO unc_249193.gr04_posicion VALUES (1, 1, 3, 'general', 5);
+INSERT INTO unc_249193.gr04_posicion VALUES (2, 1, 3, 'general', 6);
+
+
+--
+-- Data for Name: gr04_alquiler_posiciones; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (2, 2, 1, 2, false);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (2, 1, 1, 2, false);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (1, 1, 1, 1, true);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (1, 1, 1, 2, true);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (1, 1, 1, 3, true);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (1, 2, 1, 1, true);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (1, 2, 1, 2, true);
+INSERT INTO unc_249193.gr04_alquiler_posiciones VALUES (1, 2, 1, 3, true);
+
+
+--
+-- Data for Name: gr04_movimiento; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_movimiento VALUES (1, '2019-06-01 15:27:13.242434', 'Taragui', 'E');
+INSERT INTO unc_249193.gr04_movimiento VALUES (2, '2019-06-01 16:26:54.768788', 'Nicky Jam', 'I');
+INSERT INTO unc_249193.gr04_movimiento VALUES (3, '2019-06-01 19:07:24.571206', 'el juancho', 'E');
+INSERT INTO unc_249193.gr04_movimiento VALUES (4, '2019-06-01 19:07:25.180538', 'el juan', 'E');
+INSERT INTO unc_249193.gr04_movimiento VALUES (5, '2019-06-01 19:07:25.802396', 'el pancho', 'E');
+INSERT INTO unc_249193.gr04_movimiento VALUES (6, '2019-06-01 19:07:26.414914', 'el panchito', 'E');
+INSERT INTO unc_249193.gr04_movimiento VALUES (7, '2019-06-01 19:07:27.023907', 'elpa', 'E');
+
+
+--
+-- Data for Name: gr04_pallet; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_pallet VALUES ('1', 'Yerba', 200.00);
+INSERT INTO unc_249193.gr04_pallet VALUES ('2', 'Merca', 100.00);
+INSERT INTO unc_249193.gr04_pallet VALUES ('3', 'Juanssin', 300.00);
+INSERT INTO unc_249193.gr04_pallet VALUES ('5', 'Caracola', 230.00);
+INSERT INTO unc_249193.gr04_pallet VALUES ('6', 'Naskar', 150.00);
+INSERT INTO unc_249193.gr04_pallet VALUES ('4', 'Ranciovich', 200.00);
+
+
+--
+-- Data for Name: gr04_mov_entrada; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_mov_entrada VALUES (1, 'Camion', 'LALA', '1', 1, 1, 1, 1);
+INSERT INTO unc_249193.gr04_mov_entrada VALUES (2, 'triple frontera', 'pericle', '2', 1, 1, 1, 2);
+INSERT INTO unc_249193.gr04_mov_entrada VALUES (3, 'doble frontera', 'peri', '3', 1, 1, 1, 3);
+INSERT INTO unc_249193.gr04_mov_entrada VALUES (4, 'cuadriple frontera', 'perico', '4', 1, 2, 1, 1);
+INSERT INTO unc_249193.gr04_mov_entrada VALUES (5, 'frontera', 'pericich', '5', 1, 2, 1, 2);
+INSERT INTO unc_249193.gr04_mov_entrada VALUES (6, 'triple', 'pera', '6', 1, 2, 1, 3);
+
+
+--
+-- Data for Name: gr04_mov_interno; Type: TABLE DATA; Schema: unc_249193; Owner: unc_249193
+--
+
+INSERT INTO unc_249193.gr04_mov_interno VALUES (2, 'porque pinto', 2, 1, 3, NULL);
