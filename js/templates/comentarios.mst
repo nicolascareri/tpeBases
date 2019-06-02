@@ -1,0 +1,24 @@
+<div>
+  {{#comentarios}}
+    <div class="row user_coment" id="comentario{{id_comentario}}">
+      <div class="col-md-1 col-xs-2">
+        <div class="thumbnail">
+          <img class="img-responsive user-photo" src="{{imagen_perfil}}"></img>
+        </div>
+      </div>
+      <div class="col-md-10 col-sm-9 col-xs-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <strong>{{nombre}}</strong> <span class="text-muted">publicado el {{fecha_comentario}} </span>
+            <span class="label label-info nota-user">PUNTAJE {{nota_comentario}} <i class="fa fa-star" aria-hidden="true"></i></span>
+          </div>
+          <div class="panel-body">
+            {{texto_comentario}}
+          </div>
+        </div>
+      </div>
+      <!--/Review usuario-->
+      {{#admin}}<a href="" data-idcomentario="{{id_comentario}}" class="comentario-borrar fa fa-trash-o"></a>{{/admin}}
+    </div>
+  {{/comentarios}}
+</div>
