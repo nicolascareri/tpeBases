@@ -21,12 +21,14 @@
       {
         $fecha = $_POST['fecha'];
         $pos = $this->model->getPosFecha($fecha);
+        // print_r($pos);
         $this->view->mostrar_pos($pos);
       }
-      function getDiasRestantes(){
-        $dias = $_POST['dias'];
-        $restantes = $this->model->getDiasRestantes($dias);
-        $this->view->mostrar_dias($restantes);
+      function getPosCliente(){
+        $id_cliente = $_POST['id_cliente'];
+        $posiciones = $this->model->getPosCliente($id_cliente);
+        // print_r($posiciones);
+        $this->view->mostrar_posCliente($posiciones);
       }
     }
  ?>

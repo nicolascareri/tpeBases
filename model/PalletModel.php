@@ -17,7 +17,15 @@
                                                   WHERE cuit_cuil IN
                                                            (select id_cliente 
                                                            FROM gr04_alquiler
-                                                           WHERE fecha_hasta - current_date = $dias);");
+                                                           WHERE fecha_hasta - current_date >= $dias);");
+        $sentencia->execute();
+        return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      }
+      function getPosCliente($id_cliente){
+        $sentencia = $this->db->prepare("SELECT id_alquiler, nro_posicion, nro_estanteria, nro_fila FROM gr04_alquiler_posiciones
+                                         WHERE estado = true AND id_alquiler in 
+                                                                    (SELECT id_alquiler FROM gr04_alquiler
+                                                                      WHERE id_cliente = $id_cliente)");
         $sentencia->execute();
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);
       }

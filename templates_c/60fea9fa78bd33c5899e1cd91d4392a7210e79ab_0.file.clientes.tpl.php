@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-06-03 21:29:48
-  from "C:\xampp\htdocs\tpeBases\templates\restantes.tpl" */
+/* Smarty version 3.1.30, created on 2019-06-03 21:31:48
+  from "C:\xampp\htdocs\tpeBases\templates\clientes.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5cf5752c512294_84184446',
+  'unifunc' => 'content_5cf575a4a60aa5_66158363',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '9921a584c59da9e13b6c0861890423b4c62b6a7b' => 
+    '60fea9fa78bd33c5899e1cd91d4392a7210e79ab' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\tpeBases\\templates\\restantes.tpl',
-      1 => 1559590179,
+      0 => 'C:\\xampp\\htdocs\\tpeBases\\templates\\clientes.tpl',
+      1 => 1559589664,
       2 => 'file',
     ),
   ),
@@ -22,13 +22,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5cf5752c512294_84184446 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf575a4a60aa5_66158363 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="container">
   <h1>Data Warehouse</h1>
-    <div class="row">
+  <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <table class="table">
               <thead>
@@ -41,15 +41,16 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
               </thead>
               <tbody id="tablaTour">
                 <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['pos']->value, 'po');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['posiciones']->value, 'pos');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['po']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['pos']->value) {
 ?>
 
                 <tr class="centrarfila">
-                  <td><?php echo $_smarty_tpl->tpl_vars['po']->value['estanteria'];?>
-</td><td><?php echo $_smarty_tpl->tpl_vars['po']->value['posicion'];?>
-</td><td><?php echo $_smarty_tpl->tpl_vars['po']->value['fila'];?>
+                  <td><?php echo $_smarty_tpl->tpl_vars['pos']->value['id_alquiler'];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['pos']->value['nro_posicion'];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['pos']->value['nro_estanteria'];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['pos']->value['nro_fila'];?>
 </td>
                 </tr>
 

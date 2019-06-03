@@ -1,7 +1,7 @@
 {include file="header.tpl" }
 <div class="container">
   <h1>Data Warehouse</h1>
-    <div class="row">
+  <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <table class="table">
               <thead>
@@ -13,10 +13,10 @@
                 </tr>
               </thead>
               <tbody id="tablaTour">
-                {foreach from=$pos item=po}
+                {foreach from=$posiciones item=pos}
 
                 <tr class="centrarfila">
-                  <td>{$po['estanteria']}</td><td>{$po['posicion']}</td><td>{$po['fila']}</td>
+                  <td>{$pos['id_alquiler']}</td><td>{$pos['nro_posicion']}</td><td>{$pos['nro_estanteria']}</td><td>{$pos['nro_fila']}</td>
                 </tr>
 
                 {/foreach}

@@ -13,7 +13,7 @@
     $router->AddRoute("", "GET", "NavigationController", "inicio");
     $router->AddRoute("home", "GET", "NavigationController", "inicio");
     $router->AddRoute("fechas", "POST", "NavigationController", "vistaFecha");
-    $router->AddRoute("dias", "POST", "NavigationController", "getDiasRestantes");
+    $router->AddRoute("cliente", "POST", "NavigationController", "getPosCliente");
 
 
 
