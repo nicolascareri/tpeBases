@@ -6,9 +6,8 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">Id de Alquiler</th>
-                  <th scope="col">Numero de Posicion</th>
                   <th scope="col">Numero de Estanteria</th>
+                  <th scope="col">Numero de Posicion</th>
                   <th scope="col">Numero de Fila</th>
                 </tr>
               </thead>
