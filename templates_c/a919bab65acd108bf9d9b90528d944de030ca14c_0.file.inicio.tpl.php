@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-06-03 21:09:07
+/* Smarty version 3.1.30, created on 2019-06-04 21:04:17
   from "C:\xampp\htdocs\tpeBases\templates\inicio.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5cf57053c80484_31833976',
+  'unifunc' => 'content_5cf6c0b1a69786_53389335',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a919bab65acd108bf9d9b90528d944de030ca14c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\tpeBases\\templates\\inicio.tpl',
-      1 => 1559588945,
+      1 => 1559674954,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5cf57053c80484_31833976 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf6c0b1a69786_53389335 (Smarty_Internal_Template $_smarty_tpl) {
 ob_start();
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_prefixVariable1=ob_get_clean();
