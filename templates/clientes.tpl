@@ -6,17 +6,16 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">Id de Alquiler</th>
                   <th scope="col">Numero de Posicion</th>
                   <th scope="col">Numero de Estanteria</th>
                   <th scope="col">Numero de Fila</th>
                 </tr>
               </thead>
               <tbody id="tablaTour">
-                {foreach from=$posiciones item=pos}
+                {foreach from=$posiciones item=po}
 
                 <tr class="centrarfila">
-                  <td>{$pos['id_alquiler']}</td><td>{$pos['nro_posicion']}</td><td>{$pos['nro_estanteria']}</td><td>{$pos['nro_fila']}</td>
+                  <td>{$po['estanteria']}</td><td>{$po['posicion']}</td><td>{$po['fila']}</td>
                 </tr>
 
                 {/foreach}

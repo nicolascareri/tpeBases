@@ -13,7 +13,7 @@
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);
       }
       function getPosCliente($id_cliente){
-        $sentencia = $this->db->prepare("select * from fn_gr04_clientes_pos_ocupadas('$id_cliente')");
+        $sentencia = $this->db->prepare("select * from fn_gr04_cliente_pos_ocupados($id_cliente)");  
         $sentencia->execute();
         return $sentencia->fetchAll(PDO::FETCH_ASSOC);
       }
